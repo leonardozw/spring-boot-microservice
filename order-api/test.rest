@@ -1,0 +1,12 @@
+### Update existing order
+POST http://localhost:8080/api/v1/order/update/1
+Content-Type: application/json
+
+{
+    "product": "Product one",
+    "costumer": "Costumer one",
+    "shippingAddress": "Address one",
+    "price": 100.00,
+    "quantity": 1
+}
+
