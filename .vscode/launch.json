@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderApiApplication<order-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.leonardozw.orderapi.OrderApiApplication",
+            "projectName": "order-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53757 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=order-api"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-InventoryApiApplication<inventory-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.leonardozw.inventoryapi.InventoryApiApplication",
+            "projectName": "inventory-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ShippingApiApplication<shipping-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.leonardozw.shippingapi.ShippingApiApplication",
+            "projectName": "shipping-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
